@@ -1,3 +1,5 @@
+//Nama: Gerald Eberhard
+//Nim: 105223002
 public class Main {
     public static void main(String[] args) {
         Mahasiswa mhs1 = new Mahasiswa("Gerald", "12345", "Informatika", 3.5);

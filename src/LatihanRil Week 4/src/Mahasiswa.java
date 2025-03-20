@@ -1,3 +1,6 @@
+//Nama: Gerald Eberhard
+//Nim: 105223002
+
 public class Mahasiswa {
     private String nama;
     private String nim;
