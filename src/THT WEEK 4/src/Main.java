@@ -10,8 +10,8 @@ public class Main {
         produk2.tampilkanInfoProduk();
         System.out.println();
 
-        Pelanggan pelanggan1 = new Pelanggan("C001", "Budi", "budi@email.com", 5000000);
-        Pelanggan pelanggan2 = new Pelanggan("C002", "Andi", "andi@email.com", 20000000);
+        Pelanggan pelanggan1 = new Pelanggan("C001", "Gerald", "gerald@email.com", 5000000);
+        Pelanggan pelanggan2 = new Pelanggan("C002", "Dion", "dion@email.com", 20000000);
 
         System.out.println("=== Daftar Pelanggan ===");
         pelanggan1.tampilkanInfoPelanggan();
@@ -25,6 +25,7 @@ public class Main {
         Transaksi transaksi1 = new Transaksi("T001", pelanggan1, produk1, 1); 
         Transaksi transaksi2 = new Transaksi("T002", pelanggan2, produk2, 3); 
         Transaksi transaksi3 = new Transaksi("T003", pelanggan1, produk1, 10); 
+        Transaksi transaksi4 = new Transaksi("T004", pelanggan1, produk2, 5);
 
 
         System.out.println("=== Proses Transaksi ===");
@@ -40,6 +41,11 @@ public class Main {
 
         if (transaksi3.prosesTransaksi()) {
             transaksi3.tampilkanDetailTransaksi();
+        }
+        System.out.println();
+
+        if (transaksi4.prosesTransaksi()) {
+            transaksi4.tampilkanDetailTransaksi();
         }
         System.out.println();
         
